@@ -1,4 +1,106 @@
 backend:
+  name: github
+  repo: luanle7290/luan_blog
+  branch: main
+
+publish_mode: simple
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "portfolio"
+    label: "ð Portfolio Content"
+    files:
+
+      - name: "content"
+        label: "âï¸ Edit Portfolio"
+        file: "data.json"
+        format: "json"
+        fields:
+
+          # ââ HERO ââââââââââââââââââââââââââââââââââââââââââââââ
+          - label: "ð¯ Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Status Badge (e.g. Open to Opportunities)", name: "badge",       widget: "string" }
+              - { label: "Your Full Name",                             name: "name",        widget: "string" }
+              - { label: "Hero Description (1â2 sentences)",          name: "description", widget: "text"   }
+              - { label: "LinkedIn URL",                               name: "linkedin_url",widget: "string" }
+              - label: "Stats (numbers shown on hero)"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number (e.g. 7+)", name: "number", widget: "string" }
+                  - { label: "Label (e.g. Years Experience)", name: "label", widget: "string" }
+
+          # ââ ABOUT âââââââââââââââââââââââââââââââââââââââââââââ
+          - label: "ð¤ About Me"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Bio Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Skills / Tags"
+                name: "skills"
+                widget: "list"
+                field: { label: "Skill", name: "skill", widget: "string" }
+
+          # ââ CERTIFICATIONS ââââââââââââââââââââââââââââââââââââ
+          - label: "ð Certifications"
+            name: "certifications"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon",  widget: "string" }
+              - { label: "Certificate Name", name: "title", widget: "string" }
+              - { label: "Issuing Organisation", name: "org", widget: "string" }
+
+          # ââ EXPERIENCE ââââââââââââââââââââââââââââââââââââââââ
+          - label: "ð¼ Work Experience"
+            name: "experience"
+            widget: "list"
+            fields:
+              - { label: "Company Name",   name: "company", widget: "string" }
+              - { label: "Job Title",      name: "role",    widget: "string" }
+              - { label: "Period (e.g. Jan 2022 â Dec 2023)", name: "period", widget: "string" }
+              - { label: "Faded dot? (tick for older/minor roles)", name: "faded", widget: "boolean", default: false }
+              - label: "Bullet Points"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Bullet", name: "bullet", widget: "string" }
+
+          # ââ EDUCATION âââââââââââââââââââââââââââââââââââââââââ
+          - label: "ð Education"
+            name: "education"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon",   widget: "string" }
+              - { label: "Degree",       name: "degree", widget: "string" }
+              - { label: "University",   name: "school", widget: "string" }
+
+          # ââ BLOG POSTS ââââââââââââââââââââââââââââââââââââââââ
+          - label: "ð Featured Writing / Blog Posts"
+            name: "posts"
+            widget: "list"
+            fields:
+              - { label: "Post URL",   name: "url",     widget: "string" }
+              - { label: "Tag Label (e.g. Investment Analysis)", name: "tag", widget: "string" }
+              - { label: "Post Title", name: "title",   widget: "string" }
+              - { label: "Short Excerpt (2â3 sentences)", name: "excerpt", widget: "text" }
+              - { label: "Date (e.g. October 2021)", name: "date", widget: "string" }
+              - { label: "CTA card style? (tick for the last 'See All' card)", name: "cta", widget: "boolean", default: false }
+
+          # ââ CONTACT âââââââââââââââââââââââââââââââââââââââââââ
+          - label: "ð¬ Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email Address", name: "email",        widget: "string" }
+              - { label: "LinkedIn URL",  name: "linkedin_url", widget: "string" }
+              - { label: "Contact Section Description", name: "description", widget: "text" }
+backend:
   name: git-gateway
   branch: main
 
