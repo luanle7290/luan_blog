@@ -5,30 +5,57 @@
     "description": "Aspiring Strategy Consultant with 7+ years at EY, Manulife, and Prudential — translating complex market intelligence into decisive business strategies that move organisations forward.",
     "linkedin_url": "https://linkedin.com/in/lu%C3%A2n-l%C3%AA-923b3267",
     "stats": [
-      { "number": "7+", "label": "Years Experience" },
-      { "number": "3",  "label": "Top-Tier Firms"   },
-      { "number": "2",  "label": "US Degrees"        },
-      { "number": "3",  "label": "Certifications"    }
+      {
+        "number": "7+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "3",
+        "label": "Top-Tier Firms"
+      },
+      {
+        "number": "2",
+        "label": "US Degrees"
+      },
+      {
+        "number": "3",
+        "label": "Certifications"
+      }
     ]
   },
   "about": {
     "paragraphs": [
       "I'm a business strategy and consulting professional with over 7 years of experience in financial services, having worked across Vietnam's most respected organisations — Ernst & Young, Manulife, and Prudential. My career has centred on one consistent theme: turning insight into impact.",
-      "At <strong>EY Vietnam</strong>, I led teams of up to 7 consultants on high-stakes bancassurance strategy projects, developing innovative solutions for complex client challenges. At <strong>Manulife</strong>, I partnered directly with the CEO and CAO to build performance frameworks, craft strategic narratives, and drive cross-functional initiatives across a 60,000-agent network.",
-      "Most recently at <strong>Prudential</strong>, I shaped product propositions and channel strategy, delivering market intelligence that informed the Leadership team's decisions at the highest level.",
       "I hold a <strong>Master of Science in Leadership</strong> from Northeastern University and a <strong>Bachelor of Science in Finance</strong> from Rutgers University — and I write regularly on investment thinking and business strategy."
     ],
     "skills": [
-      "Business Strategy", "Management Consulting", "Market Intelligence",
-      "Product Proposition", "Executive Advisory", "Financial Analysis",
-      "Stakeholder Management", "Strategic Planning",
-      "Insurance & Bancassurance", "Business Forecasting"
+      "Business Strategy",
+      "Management Consulting",
+      "Market Intelligence",
+      "Product Proposition",
+      "Executive Advisory",
+      "Financial Analysis",
+      "Stakeholder Management",
+      "Strategic Planning",
+      "Business Forecasting"
     ]
   },
   "certifications": [
-    { "icon": "📊", "title": "FRM Part 1", "org": "Global Association of Risk Professionals (GARP)" },
-    { "icon": "⚙️", "title": "Lean Six Sigma White Belt", "org": "Advanced Innovation Group Pro Excellence (AIGPE)" },
-    { "icon": "🏛️", "title": "Associate, Life Management Institute", "org": "LOMA — Life Office Management Association" }
+    {
+      "icon": "📊",
+      "title": "FRM Part 1",
+      "org": "Global Association of Risk Professionals (GARP)"
+    },
+    {
+      "icon": "⚙️",
+      "title": "Lean Six Sigma White Belt",
+      "org": "Advanced Innovation Group Pro Excellence (AIGPE)"
+    },
+    {
+      "icon": "🏛️",
+      "title": "Associate, Life Management Institute",
+      "org": "LOMA — Life Office Management Association"
+    }
   ],
   "experience": [
     {
@@ -83,8 +110,16 @@
     }
   ],
   "education": [
-    { "icon": "🎓", "degree": "Master of Science in Leadership", "school": "Northeastern University" },
-    { "icon": "📚", "degree": "Bachelor of Science in Finance", "school": "Rutgers University" }
+    {
+      "icon": "🎓",
+      "degree": "Master of Science in Leadership",
+      "school": "Northeastern University"
+    },
+    {
+      "icon": "📚",
+      "degree": "Bachelor of Science in Finance",
+      "school": "Rutgers University"
+    }
   ],
   "posts": [
     {
