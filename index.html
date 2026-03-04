@@ -3,30 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Tran Luan â Strategy & Business Professional</title>
+  <title>Le Tran Luan &mdash; Strategy &amp; Business Professional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --blue:       #2C5282; --blue-mid:   #3182CE; --blue-light: #4299E1;
-      --blue-dark:  #1A365D; --blue-pale:  #EBF4FF; --slate:      #4A5568;
-      --white:      #FFFFFF; --off-white:  #F7FAFC; --text:       #2D3748;
-      --text-light: #718096; --border:     #E2E8F0;
-      --shadow:     0 4px 24px rgba(44,82,130,.10);
-      --shadow-lg:  0 16px 48px rgba(44,82,130,.18);
+      --blue: #2C5282; --blue-mid: #3182CE; --blue-light: #4299E1;
+      --blue-dark: #1A365D; --blue-pale: #EBF4FF; --slate: #4A5568;
+      --white: #FFFFFF; --off-white: #F7FAFC; --text: #2D3748;
+      --text-light: #718096; --border: #E2E8F0;
+      --shadow: 0 4px 24px rgba(44,82,130,.10);
+      --shadow-lg: 0 16px 48px rgba(44,82,130,.18);
     }
     html { scroll-behavior: smooth; }
     body { font-family:'Inter',sans-serif; color:var(--text); background:var(--white); line-height:1.6; }
-
     /* NAV */
-    nav {
-      position:fixed; top:0; left:0; right:0; z-index:100;
-      background:rgba(255,255,255,.96); backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--border); height:64px; padding:0 2.5rem;
-      display:flex; align-items:center; justify-content:space-between;
-    }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); height:64px; padding:0 2.5rem; display:flex; align-items:center; justify-content:space-between; }
     .nav-logo { font-weight:800; font-size:1.05rem; color:var(--blue-dark); letter-spacing:-.03em; text-decoration:none; }
     .nav-logo span { color:var(--blue-mid); }
     .nav-links { display:flex; gap:2rem; list-style:none; align-items:center; }
@@ -34,23 +28,12 @@
     .nav-links a:hover { color:var(--blue); }
     .nav-cta { background:var(--blue)!important; color:white!important; padding:.5rem 1.25rem; border-radius:6px; }
     .nav-cta:hover { background:var(--blue-dark)!important; }
-
     /* HERO */
-    .hero {
-      min-height:100vh;
-      background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 55%,#4299E1 100%);
-      display:flex; align-items:center; padding:7rem 2.5rem 5rem;
-      position:relative; overflow:hidden;
-    }
+    .hero { min-height:100vh; background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 55%,#4299E1 100%); display:flex; align-items:center; padding:7rem 2.5rem 5rem; position:relative; overflow:hidden; }
     .hero::before { content:''; position:absolute; top:-10%; right:-10%; width:700px; height:700px; border-radius:50%; background:rgba(255,255,255,.03); }
-    .hero::after  { content:''; position:absolute; bottom:-20%; left:-5%; width:500px; height:500px; border-radius:50%; background:rgba(255,255,255,.03); }
+    .hero::after { content:''; position:absolute; bottom:-20%; left:-5%; width:500px; height:500px; border-radius:50%; background:rgba(255,255,255,.03); }
     .hero-inner { max-width:860px; margin:0 auto; width:100%; position:relative; z-index:1; }
-    .hero-badge {
-      display:inline-flex; align-items:center; gap:.6rem;
-      background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28);
-      color:rgba(255,255,255,.95); padding:.4rem 1.1rem; border-radius:100px;
-      font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; margin-bottom:1.75rem;
-    }
+    .hero-badge { display:inline-flex; align-items:center; gap:.6rem; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28); color:rgba(255,255,255,.95); padding:.4rem 1.1rem; border-radius:100px; font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; margin-bottom:1.75rem; }
     .badge-dot { width:7px; height:7px; border-radius:50%; background:#68D391; animation:pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
     .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.8rem,6.5vw,5rem); color:white; line-height:1.08; margin-bottom:1.5rem; letter-spacing:-.025em; }
@@ -63,14 +46,12 @@
     .btn-white:hover { transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,0,0,.25); }
     .btn-outline { background:transparent; color:white; border:2px solid rgba(255,255,255,.45); padding:.9rem 2.1rem; border-radius:8px; font-weight:700; font-size:.9rem; text-decoration:none; transition:all .25s; display:inline-flex; align-items:center; gap:.5rem; }
     .btn-outline:hover { border-color:white; background:rgba(255,255,255,.1); }
-
     /* SECTIONS */
     section { padding:6rem 2.5rem; }
     .container { max-width:880px; margin:0 auto; }
     .s-label { font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-mid); margin-bottom:.6rem; }
     .s-title { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,4vw,2.4rem); color:var(--blue-dark); margin-bottom:.75rem; line-height:1.2; letter-spacing:-.02em; }
     .s-bar { width:44px; height:3px; background:var(--blue-light); border-radius:2px; margin-bottom:3rem; }
-
     /* ABOUT */
     #about { background:var(--off-white); }
     .about-grid { display:grid; grid-template-columns:3fr 2fr; gap:4rem; align-items:start; }
@@ -83,7 +64,6 @@
     .cert-ico { width:34px; height:34px; background:var(--blue-pale); border-radius:7px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1rem; }
     .cert-title { font-weight:600; font-size:.82rem; color:var(--text); }
     .cert-sub { font-size:.72rem; color:var(--text-light); margin-top:.15rem; }
-
     /* EXPERIENCE */
     #experience { background:white; }
     .timeline { position:relative; }
@@ -98,8 +78,7 @@
     .t-role { font-weight:600; font-size:.92rem; color:var(--blue-mid); margin-bottom:1rem; }
     .t-list { list-style:none; padding:0; }
     .t-list li { position:relative; padding-left:1.3rem; margin-bottom:.55rem; font-size:.875rem; color:var(--slate); line-height:1.65; }
-    .t-list li::before { content:'âº'; position:absolute; left:0; color:var(--blue-light); font-weight:700; font-size:1rem; line-height:1.4; }
-
+    .t-list li::before { content:'\203A'; position:absolute; left:0; color:var(--blue-light); font-weight:700; font-size:1rem; line-height:1.4; }
     /* WRITING */
     #writing { background:var(--off-white); }
     .post-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
@@ -113,7 +92,6 @@
     .post-card.cta-card .post-tag { background:var(--blue); color:white; }
     .post-card.cta-card .post-title { color:var(--blue); }
     .post-card.cta-card .post-date { color:var(--blue-mid); }
-
     /* EDUCATION */
     #education { background:white; }
     .edu-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
@@ -122,7 +100,6 @@
     .edu-icon { font-size:2rem; margin-bottom:1rem; }
     .edu-degree { font-weight:700; font-size:1rem; color:var(--blue-dark); margin-bottom:.35rem; }
     .edu-school { font-size:.9rem; color:var(--blue-mid); font-weight:600; }
-
     /* CONTACT */
     #contact { background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 100%); text-align:center; }
     #contact .s-label { color:rgba(255,255,255,.65); }
@@ -132,19 +109,16 @@
     .contact-row { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
     .c-btn { background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.35); color:white; padding:.9rem 1.9rem; border-radius:9px; font-weight:600; font-size:.875rem; text-decoration:none; transition:all .25s; display:inline-flex; align-items:center; gap:.55rem; }
     .c-btn:hover { background:rgba(255,255,255,.22); border-color:white; transform:translateY(-2px); }
-
     footer { background:var(--blue-dark); text-align:center; padding:1.5rem; font-size:.78rem; color:rgba(255,255,255,.35); border-top:1px solid rgba(255,255,255,.08); }
-
     /* ANIMATIONS */
     .fade-up { opacity:0; transform:translateY(28px); transition:opacity .6s ease,transform .6s ease; }
     .fade-up.visible { opacity:1; transform:translateY(0); }
     .hero-badge { animation:fadeUp .55s ease .1s both; }
-    .hero h1    { animation:fadeUp .55s ease .22s both; }
-    .hero-sub   { animation:fadeUp .55s ease .34s both; }
+    .hero h1 { animation:fadeUp .55s ease .22s both; }
+    .hero-sub { animation:fadeUp .55s ease .34s both; }
     .hero-stats { animation:fadeUp .55s ease .45s both; }
-    .hero-btns  { animation:fadeUp .55s ease .56s both; }
+    .hero-btns { animation:fadeUp .55s ease .56s both; }
     @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
-
     @media(max-width:700px) {
       .about-grid,.edu-grid { grid-template-columns:1fr; gap:2.5rem; }
       .hero-stats { gap:1.75rem; }
@@ -153,7 +127,6 @@
   </style>
 </head>
 <body>
-
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Le Tran <span>Luan</span></a>
@@ -165,7 +138,6 @@
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
@@ -174,12 +146,11 @@
     <p class="hero-sub" id="hero-desc"></p>
     <div class="hero-stats" id="hero-stats"></div>
     <div class="hero-btns">
-      <a id="hero-linkedin" href="#" target="_blank" class="btn-white">ð¼ View LinkedIn â</a>
-      <a href="#contact" class="btn-outline">Get in Touch â</a>
+      <a id="hero-linkedin" href="#" target="_blank" class="btn-white">&#x1F4BC; View LinkedIn &rarr;</a>
+      <a href="#contact" class="btn-outline">Get in Touch &rarr;</a>
     </div>
   </div>
 </section>
-
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
@@ -198,7 +169,6 @@
     </div>
   </div>
 </section>
-
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
@@ -208,7 +178,6 @@
     <div class="timeline" id="timeline"></div>
   </div>
 </section>
-
 <!-- WRITING -->
 <section id="writing">
   <div class="container">
@@ -218,7 +187,6 @@
     <div class="post-grid" id="post-grid"></div>
   </div>
 </section>
-
 <!-- EDUCATION -->
 <section id="education">
   <div class="container">
@@ -228,7 +196,6 @@
     <div class="edu-grid" id="edu-grid"></div>
   </div>
 </section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
@@ -237,94 +204,75 @@
     <div class="s-bar"></div>
     <p class="contact-desc" id="contact-desc"></p>
     <div class="contact-row">
-      <a id="contact-email" href="#" class="c-btn">âï¸ <span id="contact-email-text"></span></a>
-      <a id="contact-linkedin" href="#" target="_blank" class="c-btn">ð¼ LinkedIn Profile â</a>
+      <a id="contact-email" href="#" class="c-btn">&#x2709;&#xFE0F; <span id="contact-email-text"></span></a>
+      <a id="contact-linkedin" href="#" target="_blank" class="c-btn">&#x1F4BC; LinkedIn Profile &rarr;</a>
     </div>
   </div>
 </section>
-
-<footer>Â© 2025 Le Tran Luan &nbsp;Â·&nbsp; Strategy &amp; Business Professional &nbsp;Â·&nbsp; Ho Chi Minh City, Vietnam</footer>
-
+<footer>&copy; 2025 Le Tran Luan &nbsp;&middot;&nbsp; Strategy &amp; Business Professional &nbsp;&middot;&nbsp; Ho Chi Minh City, Vietnam</footer>
 <script>
-  const observer = new IntersectionObserver(
-    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-    { threshold: 0.12 }
-  );
-
-  function render(d) {
-    const h = d.hero;
-    document.getElementById('hero-badge').textContent     = h.badge;
-    document.getElementById('hero-name').textContent      = h.name;
-    document.getElementById('hero-desc').textContent      = h.description;
-    document.getElementById('hero-linkedin').href         = h.linkedin_url;
-    document.title = h.name + ' â Strategy & Business Professional';
-
-    document.getElementById('hero-stats').innerHTML =
-      h.stats.map(s => `<div><div class="stat-num">${s.number}</div><div class="stat-lbl">${s.label}</div></div>`).join('');
-
-    document.getElementById('about-paragraphs').innerHTML =
-      d.about.paragraphs.map(p => `<p>${p}</p>`).join('');
-
-    document.getElementById('skills-wrap').innerHTML =
-      d.about.skills.map(s => `<span class="skill-chip">${s}</span>`).join('');
-
-    document.getElementById('certs').innerHTML =
-      d.certifications.map(c => `
-        <div class="cert-card">
-          <div class="cert-ico">${c.icon}</div>
-          <div><div class="cert-title">${c.title}</div><div class="cert-sub">${c.org}</div></div>
-        </div>`).join('');
-
-    document.getElementById('timeline').innerHTML =
-      d.experience.map(e => `
-        <div class="t-item fade-up">
-          <div class="t-dot${e.faded ? ' faded' : ''}"></div>
-          <div class="t-head">
-            <span class="t-company">${e.company}</span>
-            <span class="t-period">${e.period}</span>
-          </div>
-          <div class="t-role">${e.role}</div>
-          <ul class="t-list">${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
-        </div>`).join('');
-
-    document.getElementById('post-grid').innerHTML =
-      d.posts.map(p => `
-        <a href="${p.url}" target="_blank" class="post-card${p.cta ? ' cta-card' : ''} fade-up">
-          <span class="post-tag">${p.tag}</span>
-          <div class="post-title">${p.title}</div>
-          <p class="post-excerpt">${p.excerpt}</p>
-          <div class="post-date">ð ${p.date}</div>
-        </a>`).join('');
-
-    document.getElementById('edu-grid').innerHTML =
-      d.education.map(e => `
-        <div class="edu-card fade-up">
-          <div class="edu-icon">${e.icon}</div>
-          <div class="edu-degree">${e.degree}</div>
-          <div class="edu-school">${e.school}</div>
-        </div>`).join('');
-
-    const c = d.contact;
-    document.getElementById('contact-desc').textContent       = c.description;
-    document.getElementById('contact-email').href             = 'mailto:' + c.email;
-    document.getElementById('contact-email-text').textContent = c.email;
-    document.getElementById('contact-linkedin').href          = c.linkedin_url;
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-  }
-
-  fetch('/data.json')
-    .then(r => r.json())
-    .then(render)
-    .catch(err => console.error('Could not load data.json:', err));
-
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', user => {
-      if (!user) {
-        window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
-      }
-    });
-  }
+const observer = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.12 }
+);
+function render(d) {
+  const h = d.hero;
+  document.getElementById('hero-badge').textContent = h.badge;
+  document.getElementById('hero-name').textContent = h.name;
+  document.getElementById('hero-desc').textContent = h.description;
+  document.getElementById('hero-linkedin').href = h.linkedin_url;
+  document.title = h.name + ' — Strategy & Business Professional';
+  document.getElementById('hero-stats').innerHTML = h.stats.map(s =>
+    `<div><div class="stat-num">${s.number}</div><div class="stat-lbl">${s.label}</div></div>`
+  ).join('');
+  document.getElementById('about-paragraphs').innerHTML = d.about.paragraphs.map(p => `<p>${p}</p>`).join('');
+  document.getElementById('skills-wrap').innerHTML = d.about.skills.map(s => `<span class="skill-chip">${s}</span>`).join('');
+  document.getElementById('certs').innerHTML = d.certifications.map(c => `
+    <div class="cert-card">
+      <div class="cert-ico">${c.icon}</div>
+      <div><div class="cert-title">${c.title}</div><div class="cert-sub">${c.org}</div></div>
+    </div>`).join('');
+  document.getElementById('timeline').innerHTML = d.experience.map(e => `
+    <div class="t-item fade-up">
+      <div class="t-dot${e.faded ? ' faded' : ''}"></div>
+      <div class="t-head">
+        <span class="t-company">${e.company}</span>
+        <span class="t-period">${e.period}</span>
+      </div>
+      <div class="t-role">${e.role}</div>
+      <ul class="t-list">${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+    </div>`).join('');
+  document.getElementById('post-grid').innerHTML = d.posts.map(p => `
+    <a href="${p.url}" target="_blank" class="post-card${p.cta ? ' cta-card' : ''} fade-up">
+      <span class="post-tag">${p.tag}</span>
+      <div class="post-title">${p.title}</div>
+      <p class="post-excerpt">${p.excerpt}</p>
+      <div class="post-date">&#x1F4C5; ${p.date}</div>
+    </a>`).join('');
+  document.getElementById('edu-grid').innerHTML = d.education.map(e => `
+    <div class="edu-card fade-up">
+      <div class="edu-icon">${e.icon}</div>
+      <div class="edu-degree">${e.degree}</div>
+      <div class="edu-school">${e.school}</div>
+    </div>`).join('');
+  const c = d.contact;
+  document.getElementById('contact-desc').textContent = c.description;
+  document.getElementById('contact-email').href = 'mailto:' + c.email;
+  document.getElementById('contact-email-text').textContent = c.email;
+  document.getElementById('contact-linkedin').href = c.linkedin_url;
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+}
+fetch('/data.json')
+  .then(r => r.json())
+  .then(render)
+  .catch(err => console.error('Could not load data.json:', err));
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on('init', user => {
+    if (!user) {
+      window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+    }
+  });
+}
 </script>
 </body>
-</html>
+      </html>
