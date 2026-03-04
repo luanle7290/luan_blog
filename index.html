@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Tran Luan â Strategy & Business Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue:       #2C5282; --blue-mid:   #3182CE; --blue-light: #4299E1;
+      --blue-dark:  #1A365D; --blue-pale:  #EBF4FF; --slate:      #4A5568;
+      --white:      #FFFFFF; --off-white:  #F7FAFC; --text:       #2D3748;
+      --text-light: #718096; --border:     #E2E8F0;
+      --shadow:     0 4px 24px rgba(44,82,130,.10);
+      --shadow-lg:  0 16px 48px rgba(44,82,130,.18);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',sans-serif; color:var(--text); background:var(--white); line-height:1.6; }
+
+    /* NAV */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      background:rgba(255,255,255,.96); backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border); height:64px; padding:0 2.5rem;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .nav-logo { font-weight:800; font-size:1.05rem; color:var(--blue-dark); letter-spacing:-.03em; text-decoration:none; }
+    .nav-logo span { color:var(--blue-mid); }
+    .nav-links { display:flex; gap:2rem; list-style:none; align-items:center; }
+    .nav-links a { text-decoration:none; color:var(--slate); font-size:.875rem; font-weight:500; transition:color .2s; }
+    .nav-links a:hover { color:var(--blue); }
+    .nav-cta { background:var(--blue)!important; color:white!important; padding:.5rem 1.25rem; border-radius:6px; }
+    .nav-cta:hover { background:var(--blue-dark)!important; }
+
+    /* HERO */
+    .hero {
+      min-height:100vh;
+      background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 55%,#4299E1 100%);
+      display:flex; align-items:center; padding:7rem 2.5rem 5rem;
+      position:relative; overflow:hidden;
+    }
+    .hero::before { content:''; position:absolute; top:-10%; right:-10%; width:700px; height:700px; border-radius:50%; background:rgba(255,255,255,.03); }
+    .hero::after  { content:''; position:absolute; bottom:-20%; left:-5%; width:500px; height:500px; border-radius:50%; background:rgba(255,255,255,.03); }
+    .hero-inner { max-width:860px; margin:0 auto; width:100%; position:relative; z-index:1; }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:.6rem;
+      background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28);
+      color:rgba(255,255,255,.95); padding:.4rem 1.1rem; border-radius:100px;
+      font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; margin-bottom:1.75rem;
+    }
+    .badge-dot { width:7px; height:7px; border-radius:50%; background:#68D391; animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.8rem,6.5vw,5rem); color:white; line-height:1.08; margin-bottom:1.5rem; letter-spacing:-.025em; }
+    .hero-sub { font-size:clamp(1rem,2vw,1.2rem); color:rgba(255,255,255,.78); max-width:580px; margin-bottom:3rem; line-height:1.75; }
+    .hero-stats { display:flex; gap:3rem; margin-bottom:3.5rem; }
+    .stat-num { font-size:2.25rem; font-weight:800; color:white; line-height:1; margin-bottom:.3rem; }
+    .stat-lbl { font-size:.72rem; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.08em; font-weight:500; }
+    .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
+    .btn-white { background:white; color:var(--blue-dark); padding:.9rem 2.1rem; border-radius:8px; font-weight:700; font-size:.9rem; text-decoration:none; transition:all .25s; display:inline-flex; align-items:center; gap:.5rem; }
+    .btn-white:hover { transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,0,0,.25); }
+    .btn-outline { background:transparent; color:white; border:2px solid rgba(255,255,255,.45); padding:.9rem 2.1rem; border-radius:8px; font-weight:700; font-size:.9rem; text-decoration:none; transition:all .25s; display:inline-flex; align-items:center; gap:.5rem; }
+    .btn-outline:hover { border-color:white; background:rgba(255,255,255,.1); }
+
+    /* SECTIONS */
+    section { padding:6rem 2.5rem; }
+    .container { max-width:880px; margin:0 auto; }
+    .s-label { font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-mid); margin-bottom:.6rem; }
+    .s-title { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,4vw,2.4rem); color:var(--blue-dark); margin-bottom:.75rem; line-height:1.2; letter-spacing:-.02em; }
+    .s-bar { width:44px; height:3px; background:var(--blue-light); border-radius:2px; margin-bottom:3rem; }
+
+    /* ABOUT */
+    #about { background:var(--off-white); }
+    .about-grid { display:grid; grid-template-columns:3fr 2fr; gap:4rem; align-items:start; }
+    .about-text p { color:var(--slate); margin-bottom:1.25rem; line-height:1.85; font-size:1rem; }
+    .skills-wrap { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.75rem; }
+    .skill-chip { background:var(--blue-pale); color:var(--blue); padding:.35rem .9rem; border-radius:100px; font-size:.78rem; font-weight:600; }
+    .certs-col h3 { font-size:.85rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--blue-dark); margin-bottom:1rem; }
+    .cert-card { background:white; border:1px solid var(--border); border-radius:10px; padding:1rem 1.1rem; margin-bottom:.75rem; display:flex; align-items:flex-start; gap:.75rem; transition:box-shadow .2s; }
+    .cert-card:hover { box-shadow:var(--shadow); }
+    .cert-ico { width:34px; height:34px; background:var(--blue-pale); border-radius:7px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1rem; }
+    .cert-title { font-weight:600; font-size:.82rem; color:var(--text); }
+    .cert-sub { font-size:.72rem; color:var(--text-light); margin-top:.15rem; }
+
+    /* EXPERIENCE */
+    #experience { background:white; }
+    .timeline { position:relative; }
+    .timeline::before { content:''; position:absolute; left:17px; top:8px; bottom:0; width:2px; background:linear-gradient(to bottom,var(--blue-light),var(--border)); }
+    .t-item { padding-left:3.75rem; padding-bottom:3rem; position:relative; }
+    .t-item:last-child { padding-bottom:0; }
+    .t-dot { position:absolute; left:9px; top:5px; width:18px; height:18px; border-radius:50%; background:var(--blue); border:3px solid white; box-shadow:0 0 0 2px var(--blue); }
+    .t-dot.faded { background:#90CDF4; box-shadow:0 0 0 2px #90CDF4; }
+    .t-head { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:.5rem; margin-bottom:.2rem; }
+    .t-company { font-weight:800; font-size:1rem; color:var(--blue-dark); }
+    .t-period { font-size:.75rem; color:var(--text-light); font-weight:600; background:var(--off-white); border:1px solid var(--border); padding:.22rem .8rem; border-radius:100px; }
+    .t-role { font-weight:600; font-size:.92rem; color:var(--blue-mid); margin-bottom:1rem; }
+    .t-list { list-style:none; padding:0; }
+    .t-list li { position:relative; padding-left:1.3rem; margin-bottom:.55rem; font-size:.875rem; color:var(--slate); line-height:1.65; }
+    .t-list li::before { content:'âº'; position:absolute; left:0; color:var(--blue-light); font-weight:700; font-size:1rem; line-height:1.4; }
+
+    /* WRITING */
+    #writing { background:var(--off-white); }
+    .post-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
+    .post-card { background:white; border-radius:14px; padding:2rem; border:1px solid var(--border); transition:all .25s; text-decoration:none; display:flex; flex-direction:column; box-shadow:var(--shadow); }
+    .post-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-color:var(--blue-light); }
+    .post-tag { display:inline-block; background:var(--blue-pale); color:var(--blue); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:.28rem .8rem; border-radius:100px; margin-bottom:1rem; width:fit-content; }
+    .post-title { font-weight:700; font-size:1rem; color:var(--blue-dark); margin-bottom:.75rem; line-height:1.45; flex-grow:1; }
+    .post-excerpt { font-size:.85rem; color:var(--text-light); line-height:1.75; margin-bottom:1.5rem; }
+    .post-date { font-size:.75rem; color:var(--text-light); font-weight:500; }
+    .post-card.cta-card { background:linear-gradient(135deg,var(--blue-pale),#DBEAFE); border-color:transparent; }
+    .post-card.cta-card .post-tag { background:var(--blue); color:white; }
+    .post-card.cta-card .post-title { color:var(--blue); }
+    .post-card.cta-card .post-date { color:var(--blue-mid); }
+
+    /* EDUCATION */
+    #education { background:white; }
+    .edu-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+    .edu-card { background:var(--off-white); border:1px solid var(--border); border-radius:14px; padding:2rem; transition:box-shadow .2s; }
+    .edu-card:hover { box-shadow:var(--shadow); }
+    .edu-icon { font-size:2rem; margin-bottom:1rem; }
+    .edu-degree { font-weight:700; font-size:1rem; color:var(--blue-dark); margin-bottom:.35rem; }
+    .edu-school { font-size:.9rem; color:var(--blue-mid); font-weight:600; }
+
+    /* CONTACT */
+    #contact { background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 100%); text-align:center; }
+    #contact .s-label { color:rgba(255,255,255,.65); }
+    #contact .s-title { color:white; }
+    #contact .s-bar { background:rgba(255,255,255,.35); margin:.75rem auto 2.5rem; }
+    .contact-desc { color:rgba(255,255,255,.78); font-size:1.05rem; max-width:500px; margin:0 auto 3rem; line-height:1.75; }
+    .contact-row { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
+    .c-btn { background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.35); color:white; padding:.9rem 1.9rem; border-radius:9px; font-weight:600; font-size:.875rem; text-decoration:none; transition:all .25s; display:inline-flex; align-items:center; gap:.55rem; }
+    .c-btn:hover { background:rgba(255,255,255,.22); border-color:white; transform:translateY(-2px); }
+
+    footer { background:var(--blue-dark); text-align:center; padding:1.5rem; font-size:.78rem; color:rgba(255,255,255,.35); border-top:1px solid rgba(255,255,255,.08); }
+
+    /* ANIMATIONS */
+    .fade-up { opacity:0; transform:translateY(28px); transition:opacity .6s ease,transform .6s ease; }
+    .fade-up.visible { opacity:1; transform:translateY(0); }
+    .hero-badge { animation:fadeUp .55s ease .1s both; }
+    .hero h1    { animation:fadeUp .55s ease .22s both; }
+    .hero-sub   { animation:fadeUp .55s ease .34s both; }
+    .hero-stats { animation:fadeUp .55s ease .45s both; }
+    .hero-btns  { animation:fadeUp .55s ease .56s both; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+
+    @media(max-width:700px) {
+      .about-grid,.edu-grid { grid-template-columns:1fr; gap:2.5rem; }
+      .hero-stats { gap:1.75rem; }
+      .nav-links li:not(:last-child) { display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Le Tran <span>Luan</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="badge-dot"></span><span id="hero-badge"></span></div>
+    <h1 id="hero-name"></h1>
+    <p class="hero-sub" id="hero-desc"></p>
+    <div class="hero-stats" id="hero-stats"></div>
+    <div class="hero-btns">
+      <a id="hero-linkedin" href="#" target="_blank" class="btn-white">ð¼ View LinkedIn â</a>
+      <a href="#contact" class="btn-outline">Get in Touch â</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="s-label fade-up">About Me</div>
+    <h2 class="s-title fade-up">Strategic Thinker. Business Builder.</h2>
+    <div class="s-bar fade-up"></div>
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <div id="about-paragraphs"></div>
+        <div class="skills-wrap" id="skills-wrap"></div>
+      </div>
+      <div class="certs-col fade-up">
+        <h3>Certifications</h3>
+        <div id="certs"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="s-label fade-up">Career Journey</div>
+    <h2 class="s-title fade-up">Work Experience</h2>
+    <div class="s-bar fade-up"></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section id="writing">
+  <div class="container">
+    <div class="s-label fade-up">Featured Writing</div>
+    <h2 class="s-title fade-up">Insights &amp; Analysis</h2>
+    <div class="s-bar fade-up"></div>
+    <div class="post-grid" id="post-grid"></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="s-label fade-up">Academic Background</div>
+    <h2 class="s-title fade-up">Education</h2>
+    <div class="s-bar fade-up"></div>
+    <div class="edu-grid" id="edu-grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="s-label">Let's Connect</div>
+    <h2 class="s-title">Open to New Opportunities</h2>
+    <div class="s-bar"></div>
+    <p class="contact-desc" id="contact-desc"></p>
+    <div class="contact-row">
+      <a id="contact-email" href="#" class="c-btn">âï¸ <span id="contact-email-text"></span></a>
+      <a id="contact-linkedin" href="#" target="_blank" class="c-btn">ð¼ LinkedIn Profile â</a>
+    </div>
+  </div>
+</section>
+
+<footer>Â© 2025 Le Tran Luan &nbsp;Â·&nbsp; Strategy &amp; Business Professional &nbsp;Â·&nbsp; Ho Chi Minh City, Vietnam</footer>
+
+<script>
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.12 }
+  );
+
+  function render(d) {
+    const h = d.hero;
+    document.getElementById('hero-badge').textContent     = h.badge;
+    document.getElementById('hero-name').textContent      = h.name;
+    document.getElementById('hero-desc').textContent      = h.description;
+    document.getElementById('hero-linkedin').href         = h.linkedin_url;
+    document.title = h.name + ' â Strategy & Business Professional';
+
+    document.getElementById('hero-stats').innerHTML =
+      h.stats.map(s => `<div><div class="stat-num">${s.number}</div><div class="stat-lbl">${s.label}</div></div>`).join('');
+
+    document.getElementById('about-paragraphs').innerHTML =
+      d.about.paragraphs.map(p => `<p>${p}</p>`).join('');
+
+    document.getElementById('skills-wrap').innerHTML =
+      d.about.skills.map(s => `<span class="skill-chip">${s}</span>`).join('');
+
+    document.getElementById('certs').innerHTML =
+      d.certifications.map(c => `
+        <div class="cert-card">
+          <div class="cert-ico">${c.icon}</div>
+          <div><div class="cert-title">${c.title}</div><div class="cert-sub">${c.org}</div></div>
+        </div>`).join('');
+
+    document.getElementById('timeline').innerHTML =
+      d.experience.map(e => `
+        <div class="t-item fade-up">
+          <div class="t-dot${e.faded ? ' faded' : ''}"></div>
+          <div class="t-head">
+            <span class="t-company">${e.company}</span>
+            <span class="t-period">${e.period}</span>
+          </div>
+          <div class="t-role">${e.role}</div>
+          <ul class="t-list">${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+        </div>`).join('');
+
+    document.getElementById('post-grid').innerHTML =
+      d.posts.map(p => `
+        <a href="${p.url}" target="_blank" class="post-card${p.cta ? ' cta-card' : ''} fade-up">
+          <span class="post-tag">${p.tag}</span>
+          <div class="post-title">${p.title}</div>
+          <p class="post-excerpt">${p.excerpt}</p>
+          <div class="post-date">ð ${p.date}</div>
+        </a>`).join('');
+
+    document.getElementById('edu-grid').innerHTML =
+      d.education.map(e => `
+        <div class="edu-card fade-up">
+          <div class="edu-icon">${e.icon}</div>
+          <div class="edu-degree">${e.degree}</div>
+          <div class="edu-school">${e.school}</div>
+        </div>`).join('');
+
+    const c = d.contact;
+    document.getElementById('contact-desc').textContent       = c.description;
+    document.getElementById('contact-email').href             = 'mailto:' + c.email;
+    document.getElementById('contact-email-text').textContent = c.email;
+    document.getElementById('contact-linkedin').href          = c.linkedin_url;
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  }
+
+  fetch('/data.json')
+    .then(r => r.json())
+    .then(render)
+    .catch(err => console.error('Could not load data.json:', err));
+
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', user => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+      }
+    });
+  }
+</script>
+</body>
+</html>
