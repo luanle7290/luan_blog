@@ -2,7 +2,7 @@
   "hero": {
     "badge": "Open to Strategy & Consulting Roles",
     "name": "Le Tran Luan",
-    "description": "Aspiring Strategy Consultant with 7+ years at EY, Manulife, and Prudential — translating complex market intelligence into decisive business strategies that move organisations forward.",
+    "description": "Aspiring Strategy Consultant with 7+ years at EY, Manulife, and Prudential â translating complex market intelligence into decisive business strategies that move organisations forward.",
     "linkedin_url": "https://linkedin.com/in/lu%C3%A2n-l%C3%AA-923b3267",
     "stats": [
       {
@@ -16,17 +16,13 @@
       {
         "number": "2",
         "label": "US Degrees"
-      },
-      {
-        "number": "3",
-        "label": "Certifications"
       }
     ]
   },
   "about": {
     "paragraphs": [
-      "I'm a business strategy and consulting professional with over 7 years of experience in financial services, having worked across Vietnam's most respected organisations — Ernst & Young, Manulife, and Prudential. My career has centred on one consistent theme: turning insight into impact.",
-      "I hold a <strong>Master of Science in Leadership</strong> from Northeastern University and a <strong>Bachelor of Science in Finance</strong> from Rutgers University — and I write regularly on investment thinking and business strategy."
+      "I'm a business strategy and consulting professional with over 7 years of experience in financial services, having worked across Vietnam's most respected organisations â Ernst & Young, Manulife, and Prudential. My career has centred on one consistent theme: turning insight into impact.",
+      "I hold a <strong>Master of Science in Leadership</strong> from Northeastern University and a <strong>Bachelor of Science in Finance</strong> from Rutgers University â and I write regularly on investment thinking and business strategy."
     ],
     "skills": [
       "Business Strategy",
@@ -42,26 +38,26 @@
   },
   "certifications": [
     {
-      "icon": "📊",
+      "icon": "ð",
       "title": "FRM Part 1",
       "org": "Global Association of Risk Professionals (GARP)"
     },
     {
-      "icon": "⚙️",
+      "icon": "âï¸",
       "title": "Lean Six Sigma White Belt",
       "org": "Advanced Innovation Group Pro Excellence (AIGPE)"
     },
     {
-      "icon": "🏛️",
+      "icon": "ðï¸",
       "title": "Associate, Life Management Institute",
-      "org": "LOMA — Life Office Management Association"
+      "org": "LOMA â Life Office Management Association"
     }
   ],
   "experience": [
     {
       "company": "Prudential Vietnam Assurance",
       "role": "Product Proposition & Strategy Manager",
-      "period": "Sep 2024 – Dec 2025",
+      "period": "Sep 2024 â Dec 2025",
       "faded": false,
       "bullets": [
         "Developed need-based propositions to strengthen product positioning and distribution channel alignment",
@@ -73,7 +69,7 @@
     {
       "company": "Ernst & Young Vietnam",
       "role": "Manager, Insurance Consulting",
-      "period": "Jul 2022 – Jul 2024",
+      "period": "Jul 2022 â Jul 2024",
       "faded": false,
       "bullets": [
         "Led and managed multi-disciplinary teams of up to 7 local and international consultants on bancassurance strategy engagements",
@@ -86,7 +82,7 @@
     {
       "company": "Manulife Vietnam",
       "role": "Executive Assistant to CAO & Agency Strategy",
-      "period": "Mar 2020 – Jun 2022",
+      "period": "Mar 2020 â Jun 2022",
       "faded": false,
       "bullets": [
         "Enabled the Chief Agency Officer to lead an agency force of 60,000+ agents through strategic planning, reporting, and executive communication",
@@ -99,7 +95,7 @@
     {
       "company": "Manulife Vietnam",
       "role": "Agency Business Development & EA to CEO",
-      "period": "Mar 2018 – Mar 2020",
+      "period": "Mar 2018 â Mar 2020",
       "faded": true,
       "bullets": [
         "Designed and executed sales contests aligned with corporate strategy, driving measurable agency performance",
@@ -111,12 +107,12 @@
   ],
   "education": [
     {
-      "icon": "🎓",
+      "icon": "ð",
       "degree": "Master of Science in Leadership",
       "school": "Northeastern University"
     },
     {
-      "icon": "📚",
+      "icon": "ð",
       "degree": "Bachelor of Science in Finance",
       "school": "Rutgers University"
     }
@@ -126,14 +122,14 @@
       "url": "https://luanletran.blogspot.com/2021/10/investment-thesis-episode-1-saigon.html",
       "tag": "Investment Analysis",
       "title": "Investment Thesis: Saigon Ground Services (SGN)",
-      "excerpt": "A rigorous analysis of SGN — examining its business model, competitive positioning, and long-term value drivers in Vietnam's aviation ground services sector.",
+      "excerpt": "A rigorous analysis of SGN â examining its business model, competitive positioning, and long-term value drivers in Vietnam's aviation ground services sector.",
       "date": "October 2021",
       "cta": false
     },
     {
       "url": "https://luanletran.blogspot.com/2021/12/mujo-change-futures-only-certainty.html",
       "tag": "Philosophy & Strategy",
-      "title": "Mujo — Change: Future's Only Certainty",
+      "title": "Mujo â Change: Future's Only Certainty",
       "excerpt": "Drawing on the Japanese Buddhist concept of impermanence, this piece explores why embracing change is a prerequisite for sound long-term strategic and investment thinking.",
       "date": "December 2021",
       "cta": false
@@ -141,7 +137,7 @@
     {
       "url": "https://luanletran.blogspot.com/",
       "tag": "All Posts",
-      "title": "Explore All Writing →",
+      "title": "Explore All Writing â",
       "excerpt": "Browse the full archive of investment theses, market analysis, and strategic insights published on the blog.",
       "date": "luanletran.blogspot.com",
       "cta": true
@@ -150,6 +146,6 @@
   "contact": {
     "email": "luanle7290@gmail.com",
     "linkedin_url": "https://linkedin.com/in/lu%C3%A2n-l%C3%AA-923b3267",
-    "description": "I'm actively exploring strategy and consulting roles. Whether you'd like to discuss an opportunity, collaborate, or simply exchange ideas — I'd love to hear from you."
+    "description": "I'm actively exploring strategy and consulting roles. Whether you'd like to discuss an opportunity, collaborate, or simply exchange ideas â I'd love to hear from you."
   }
 }
