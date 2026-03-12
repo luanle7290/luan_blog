@@ -146,5 +146,14 @@
     "email": "luanle7290@gmail.com",
     "linkedin_url": "https://linkedin.com/in/lu%C3%A2n-l%C3%AA-923b3267",
     "description": "I'm actively exploring strategy and consulting roles. Whether you'd like to discuss an opportunity, collaborate, or simply exchange ideas — I'd love to hear from you."
-  }
+  },
+  "side_projects": [
+    {
+      "name": "Bảo Hiểm Nhân Thọ — Tuyển Dụng",
+      "tag": "Side Project",
+      "description": "A live job board tracking open positions across 13+ Vietnamese life insurance companies — built to help industry professionals monitor hiring trends in one place.",
+      "url": "https://bhnhantho.netlify.app/",
+      "cta": "View Live Site"
+    }
+  ]
 }
