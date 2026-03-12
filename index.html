@@ -124,6 +124,13 @@
       .hero-stats { gap:1.75rem; }
       .nav-links li:not(:last-child) { display:none; }
     }
+  
+    /* PROJECTS */
+    #projects { background: var(--off-white); }
+    .project-card { background:white; border-radius:14px; padding:2rem; border:1px solid var(--border); transition:all .25s; text-decoration:none; display:flex; flex-direction:column; box-shadow:var(--shadow); }
+    .project-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-color:var(--blue-light); }
+    .project-link { margin-top:1.25rem; display:inline-flex; align-items:center; gap:.4rem; font-size:.82rem; font-weight:700; color:var(--blue); letter-spacing:.02em; }
+    .project-link::after { content:' →'; }
   </style>
 </head>
 <body>
@@ -134,7 +141,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#writing">Writing</a></li>
-    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
@@ -194,6 +201,16 @@
     <h2 class="s-title fade-up">Education</h2>
     <div class="s-bar fade-up"></div>
     <div class="edu-grid" id="edu-grid"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="s-label fade-up">What I Build</div>
+    <h2 class="s-title fade-up">Side Projects</h2>
+    <div class="s-bar fade-up"></div>
+    <div class="post-grid" id="projects-grid"></div>
   </div>
 </section>
 <!-- CONTACT -->
@@ -273,6 +290,19 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+  // Render side projects
+  const projGrid = document.getElementById('projects-grid');
+  if (projGrid && d.side_projects) {
+    projGrid.innerHTML = d.side_projects.map(p => `
+      <a href="${p.url}" target="_blank" class="post-card project-card fade-up">
+        <span class="post-tag">${p.tag}</span>
+        <div class="post-title">${p.name}</div>
+        <p class="post-excerpt">${p.description}</p>
+        <div class="project-link">${p.cta}</div>
+      </a>`).join('');
+    observe(projGrid.querySelectorAll('.fade-up'));
+  }
 </script>
 </body>
       </html>
