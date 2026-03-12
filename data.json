@@ -149,9 +149,16 @@
   },
   "side_projects": [
     {
-      "name": "Bảo Hiểm Nhân Thọ — Tuyển Dụng",
-      "tag": "Side Project",
-      "description": "A live job board tracking open positions across 13+ Vietnamese life insurance companies — built to help industry professionals monitor hiring trends in one place.",
+      "name": "A Job Board for all life insurance companies",
+      "tag": "Project 1",
+      "description": "A live job board tracking open positions across all Vietnamese life insurance companies — built to help industry professionals monitor hiring trends in one place.",
+      "url": "https://bhnhantho.netlify.app/",
+      "cta": "View Live Site"
+    }
+    {
+      "name": "A Job Board for all life insurance companies",
+      "tag": "Project 1",
+      "description": "A live job board tracking open positions across all Vietnamese life insurance companies — built to help industry professionals monitor hiring trends in one place.",
       "url": "https://bhnhantho.netlify.app/",
       "cta": "View Live Site"
     }
