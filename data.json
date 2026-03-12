@@ -37,10 +37,15 @@
   },
   "certifications": [
     {
+      "icon": "🏛️",
+      "title": "Google AI Professional Certificate",
+      "org": "Google"
+    },
+    {
       "icon": "📊",
       "title": "FRM Part 1",
       "org": "Global Association of Risk Professionals (GARP)"
-    },
+    },  
     {
       "icon": "⚙️",
       "title": "Lean Six Sigma White Belt",
