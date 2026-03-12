@@ -278,18 +278,6 @@ function render(d) {
   document.getElementById('contact-email-text').textContent = c.email;
   document.getElementById('contact-linkedin').href = c.linkedin_url;
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-}
-fetch('/data.json')
-  .then(r => r.json())
-  .then(render)
-  .catch(err => console.error('Could not load data.json:', err));
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', user => {
-    if (!user) {
-      window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
-    }
-  });
-}
 
   // Render side projects
   const projGrid = document.getElementById('projects-grid');
@@ -303,6 +291,20 @@ if (window.netlifyIdentity) {
       </a>`).join('');
     observe(projGrid.querySelectorAll('.fade-up'));
   }
+}
+fetch('/data.json')
+  .then(r => r.json())
+  .then(render)
+  .catch(err => console.error('Could not load data.json:', err));
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on('init', user => {
+    if (!user) {
+      window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+    }
+  });
+}
+
+  
 </script>
 </body>
       </html>
