@@ -289,7 +289,7 @@ function render(d) {
         <p class="post-excerpt">${p.description}</p>
         <div class="project-link">${p.cta}</div>
       </a>`).join('');
-    observe(projGrid.querySelectorAll('.fade-up'));
+    projGrid.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   }
 }
 fetch('/data.json')
