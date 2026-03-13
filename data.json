@@ -159,13 +159,6 @@
       "description": "A live job board tracking open positions across all Vietnamese life insurance companies — built to help industry professionals monitor hiring trends in one place.",
       "url": "https://bhnhantho.netlify.app/",
       "cta": "View Live Site"
-    },
-    {
-      "name": "A Mini-Shazam for Westlife songs",
-      "tag": "Project 2",
-      "description": "A Mini-Shazam to detech all Westlife songs - to test the ability of recognizing songs and sounds. We can expand the library to detech more songs",
-      "url": "https://bhnhantho.netlify.app/",
-      "cta": "View Live Site"
     }
-  ]
+     ]
 }
