@@ -159,6 +159,13 @@
       "description": "A live job board tracking open positions across all Vietnamese life insurance companies — built to help industry professionals monitor hiring trends in one place.",
       "url": "https://bhnhantho.netlify.app/",
       "cta": "View Live Site"
+    },
+    {
+      "name": "FoodiemeasureAI - App for people with Gout",
+      "tag": "Project 2",
+      "description": "An app that could scan my food and instantly told me if the food is good for people with gout like me.",
+      "url": "https://foodiemeasureai.streamlit.app/",
+      "cta": "View Live Site"
     }
      ]
 }
