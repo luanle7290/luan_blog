@@ -163,7 +163,7 @@
     {
       "name": "FoodiemeasureAI - App for people with Gout",
       "tag": "Project 2",
-      "description": "An app that could scan my food and instantly told me if the food is good for people with gout like me.",
+      "description": "An app that could scan the food and instantly informed if the food is good for people with gout. People take a picture of the food before eating or upload an existing picture to the app, the app will instantly give the information",
       "url": "https://foodiemeasureai.streamlit.app/",
       "cta": "View Live Site"
     }
