@@ -173,6 +173,6 @@
       "description": "A replicated, mini version of Shazam. The users play 1 of the 10 songs suggested in the app, the app will tell you what song and a link to Youtube and Spotify.",
       "url": "https://minishazamai.streamlit.app/",
       "cta": "View Live Site"
-    },
+    }
   ]
 }
